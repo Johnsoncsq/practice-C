@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+	int i = 0;
+	int n = 0;
+	scanf("%d",&n);
+	int ret = 1;
+	for(i=1; i<=n; i++)
+	{
+		ret = ret * i;
+	}
+	printf("ret = %d\n",ret);
+	return 0;
+}
+
+
+int main()
+{
+	int a ;
+	scanf("%d",&a);
+    if (a%2!= 0)
+	printf("是\n");
+    else  
+	printf("否\n");
+	return 0; 
+}
+
+
+
+int main()
+{
+	int i = 0;
+	int n = 0;
+	int ret = 1;
+	int sum = 0;
+	for(n=1; n<=10; n++)   //更好的算法  计算阶乘相加 
+	{
+		ret = ret * n;
+		sum = sum + ret;
+	}
+//	for(n=1; n<=3; n++)
+//	{
+//		for(i=1; i<=n; i++)
+//		ret = 1;
+//		{
+//			ret = ret * i;
+//		}
+//		sum = sum + ret;
+//	}
+	printf("sum = %d\n",sum); 
+	return 0;
+}
+
+
+
+
+
+
